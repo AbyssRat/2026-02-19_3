@@ -6,11 +6,13 @@
 }
 
 body {
-  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  background-image: url('assets/back.png');
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 40px 15px;
+
 }
 
 .container {
@@ -61,7 +63,7 @@ button {
   padding: 10px;
   border: none;
   border-radius: 8px;
-  background-color: #4e73df;
+  background-color: #375bc7;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -69,7 +71,7 @@ button {
 }
 
 button:hover {
-  background-color: #2e59d9;
+  background-color: #1115ce;
 }
 
 p {
