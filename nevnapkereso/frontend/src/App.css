@@ -38,7 +38,7 @@ h1 {
   background: #A2D65A;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(255, 251, 0, 0.486);
   margin-bottom: 20px;
   transition: transform 0.2s ease;
 }
@@ -59,7 +59,7 @@ input {
   border-radius: 8px;
   border: 1px solid #2E7D32;
   font-size: 14px;
-  color: #0d3f10;
+  color: #ffffff;
   background-color: #2E7D32;
   
 }
@@ -68,6 +68,11 @@ input:focus {
   outline: none;
   border-color: #0d3f10;
 }
+
+input::placeholder {
+  color: #0d3f10;
+}
+
 
 button {
   width: 100%;
@@ -86,8 +91,9 @@ button:hover {
 }
 
 p {
+  font-weight: bolder;
+  font-style: italic;
   margin-top: 10px;
-  font-weight: 500;
   color: #2E7D32;
 }
 
