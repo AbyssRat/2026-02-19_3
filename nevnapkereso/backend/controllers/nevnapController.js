@@ -21,3 +21,4 @@ export const addNevnap = (req, res) => {
     res.json({ message: "Sikeres mentés" });
   });
 };
+

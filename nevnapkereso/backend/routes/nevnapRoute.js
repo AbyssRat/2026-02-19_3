@@ -1,9 +1,9 @@
 import express from "express";
 import { getAllNevnap, addNevnap } from "../controllers/nevnapController.js";
 
-const router = express.Router();
+const nevnapRouter = express.Router();
 
-router.get("/", getAllNevnap);
-router.post("/", addNevnap);
+nevnapRouter.get("/", getAllNevnap);
+nevnapRouter.post("/", addNevnap);
 
-export default router;
+export default nevnapRouter;

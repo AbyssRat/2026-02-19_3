@@ -1,13 +1,13 @@
 import express from "express";
 import cors from "cors";
-import nevnapRoutes from "./routes/nevnapRoutes.js";
+import nevnapRouter from "./routes/nevnapRoute.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/nevnap", nevnapRoutes);
+app.use("/api/nevnap", nevnapRouter);
 
 app.listen(5000, () => {
   console.log("Szerver fut a http://localhost:5000 címen");
