@@ -1,4 +1,4 @@
-const db = require("../config/db");
+import connection from "../config/db";
 
 exports.getAllNevnap = (req, res) => {
   db.query("SELECT * FROM nevnap", (err, result) => {

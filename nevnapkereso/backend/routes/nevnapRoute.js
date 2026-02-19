@@ -1,6 +1,6 @@
-const express = require("express");
-const router = express.Router();
-const controller = require("../controllers/nevnapController");
+import express from "express";
+import controller from "../controllers/nevnapController";
+import { Router } from "express";
 
 router.get("/", controller.getAllNevnap);
 router.post("/", controller.addNevnap);
