@@ -1,18 +1,18 @@
-import mysql from "mysql";
+import mysql from "mysql2";
 
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "nevnapok"
+  database: "adatbazis_nev"
 });
 
-connection.connect((err) => {
+db.connect((err) => {
   if (err) {
-    console.error("DB hiba:", err);
+    console.error("MySQL hiba:", err);
   } else {
     console.log("MySQL csatlakozva");
   }
 });
 
-export default connection;
+export default db;

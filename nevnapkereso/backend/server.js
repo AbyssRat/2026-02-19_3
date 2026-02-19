@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
-
-const nevnapRoutes = require("./routes/nevnapRoutes");
+import nevnapRoutes from "./routes/nevnapRoutes.js";
 
 const app = express();
 
